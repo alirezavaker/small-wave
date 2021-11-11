@@ -1,0 +1,117 @@
+body {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 300;
+  background-color: #dcdde1;
+  color: #2f3640;
+}
+.circle {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: #000;
+  
+  position: relative;
+  overflow: hidden;
+
+  z-index: 1;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  width: 200%;
+  height: 200%;
+  left: -50%;
+
+  border-radius: 40%;
+  animation: Nitro 10s linear forwards infinite;
+}
+@keyframes Nitro {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*
+Background Color Classes
+*/
+
+.backg-dark {
+  background-color: #2f3640;
+}
+.backg-light {
+  background-color: #dcdde1;
+}
+.backg-blue {
+  background-color: #192a56;
+}
+.backg-green {
+  background-color: #44bd32;
+}
+.backg-yellow {
+  background-color: #e1b12c;
+}
+.backg-red {
+  background-color: #c23616;
+}
+
+/*
+Wave Color Classes
+*/
+
+.wave-green {
+  border: 5px solid #1a1a;
+}
+.wave-green::after {
+  background: rgba(83, 252, 83, 0.5);
+  box-shadow: 0 0 -10px #03bc03;
+}
+.wave-blue {
+  border: 5px solid #192a56;
+}
+.wave-blue::after {
+  background-color: rgba(39, 60, 117, 0.5);
+  box-shadow: 0 0 -10px #273c75;
+}
+.wave-yellow {
+  border: 5px solid #e1b12c;
+}
+.wave-yellow::after {
+  background-color: rgba(251, 197, 49, 0.5);
+  box-shadow: 0 0 -10px #fbc531;
+}
+.wave-red {
+  border: 5px solid #c23616;
+}
+.wave-red::after {
+  background-color: rgba(232, 65, 24, 0.5);
+  box-shadow: 0 0 -10px #e84118;
+}
+.wave-dark {
+  border: 5px solid #2f3640;
+}
+.wave-dark::after {
+  background-color: rgba(53, 59, 72, 0.5);
+  box-shadow: 0 0 -10px #353b48;
+}
+.wave-light {
+  border: 5px solid #dcdde1;
+}
+.wave-light::after {
+  background-color: rgba(245, 246, 250, 0.5);
+  box-shadow: 0 0 -10px #f5f6fa;
+}
+.progress {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  z-index: 2
+}
+.progress span{
+  color: lightblue;
+  font-size: 3rem;
+  font-weight: 700;
+
+}

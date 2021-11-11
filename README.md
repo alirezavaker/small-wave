@@ -1,4 +1,4 @@
-# Project Title
+# Small Wave - Css Module
 
 ## Table of Contents
 
